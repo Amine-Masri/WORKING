@@ -99,7 +99,7 @@ You can send us your feedback through e-mail on the following e-mail id:<br />
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-10">
-<a href="mailto:chiraggoel.53784@gmail.com" style="color:#000000">sunnygkp10@gmail.com</a><br /><br />
+<a href="mailto:admin@gmail.com" style="color:#000000">admin@gmail.com</a><br /><br />
 </div><div class="col-md-1"></div></div>
 <p>Or you can directly submit your feedback by filling the enteries below:-</p>
 <form role="form"  method="post" action="feed.php?q=feedback.php">
