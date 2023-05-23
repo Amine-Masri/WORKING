@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Intervention{% endblock %}
+
+{% block body %}
+
+<style>
+    h1{
+        text-align : center;
+        margin-top : 16px;
+    }
+</style>
+
+    <h1>Intervention à effectuer</h1>
+
+    {{ include('intervention/_form.html.twig') }}
+
+    <a href="{{ path('intervention_index') }}">back to list</a>
+{% endblock %}

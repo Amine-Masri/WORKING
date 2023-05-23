@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Intervention{% endblock %}
+
+{% block body %}
+    <h1>Intervention</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ interventions.id }}</td>
+            </tr>
+            <tr>
+                <th>Date_depot</th>
+                <td>{{ interventions.dateDepot ? interventions.dateDepot|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Date_restitution</th>
+                <td>{{ interventions.dateRestitution ? interventions.dateRestitution|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Session_user</th>
+                <td>{{ interventions.sessionUser }}</td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>{{ interventions.password }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('intervention_index') }}">back to list</a>
+
+    <a href="{{ path('intervention_edit', {'id': interventions.id}) }}">edit</a>
+
+{% endblock %}

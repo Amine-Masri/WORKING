@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello GestionClienteleController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+<center>
+    <h1>Gestion des clients</h1><br><hr><br>
+
+    <button type="button" class="btn btn-primary btn-lg">Liste des clients</button>
+    <button type="button" class="btn btn-success btn-lg">Créer un nouvelle fiche client</button>
+</center>
+
+<br><hr><br>
+
+<center>
+<h3>Rechercher un client</h3><br><br>
+</center>
+<form>
+  <div class="form-row">
+     <div class="col-auto">
+      <label class="sr-only" for="inlineFormInputGroup">Portable</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text"><i class="fas fa-mobile"></i></div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Portable">
+      </div>
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="State">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Zip">
+    </div>
+  </div>
+</form>
+</div>
+{% endblock %}
